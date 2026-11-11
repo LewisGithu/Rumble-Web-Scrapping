@@ -13,10 +13,11 @@ Rumble relies on dynamic JavaScript rendering and anti-bot firewalls that block 
 
 ### 2. Cloud ETL & Medallion Architecture (Databricks)
 The raw extracted datasets were ingested into **Databricks** and transformed across three structured data layers:
-* ** [`The Codes Notebook`](./codes/TateSpeech_bronze_to_gold.ipynb)
+**Bronze to Silver to Gold**[`The Codes Notebook`](./codes/TateSpeech_bronze_to_gold.ipynb)
 * **🥉 Bronze Layer (Raw Ingestion):** Loaded [`the scraped CSV records`](./files/tate_speech_livestreams_updated.csv) into raw Delta tables, preserving original schema attributes, timestamps, and metadata strings for full auditability.
 * **🥈 Silver Layer (Cleansing & AI Classification):** Standardized date/time formats, converted string metrics and duration timestamps into clean numerical fields, deduplicated records, and classified livestream topics and content themes.
 * **🥇 Gold Layer (Business-Level Aggregations):** Modeled curated [` analytical table`](./files/gold_tate_speech_livestreams.csv) tracking cumulative views, publishing frequency, duration impact on engagement, and top-performing stream series.
+  [`The Codes Notebook`](./codes/TateSpeech_bronze_to_gold.ipynb)
 
 ### 3. Business Intelligence & Visualization (Databricks Dashboard)
 Using the curated [`Gold table`](./files/gold_tate_speech_livestreams.csv), I built an executive dashboard directly inside **Databricks** to uncover channel growth trends, optimal stream lengths, and audience engagement patterns. 
