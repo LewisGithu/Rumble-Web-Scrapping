@@ -24,7 +24,10 @@ Using the curated [`Gold table`](./files/gold_tate_speech_livestreams.csv), I bu
 * 📄 **View the Full Dashboard Report:** [`dashboard.pdf`](./dashboard.pdf)
 
 ---
-
+## 📈 Key Analytical Findings
+* **Stream Duration vs. Engagement:** Longer livestreams (over 2 hours) consistently generated higher total view counts and stronger comment-to-view interaction ratios compared to shorter clips.
+* **Publishing Cadence:** Peak audience engagement occurred during scheduled evening broadcasts, driving rapid view velocity within the first 24 hours.
+  
 ## 📂 Repository Structure
 
 ```text
