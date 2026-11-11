@@ -48,7 +48,7 @@ Rumble-Web-Scrapping/
 ## 🚀 How to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/LewisGithu/Rumble-Web-Scrapping/tree/main
    ```
 2. Install the required dependencies:
    ```bash
