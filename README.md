@@ -12,8 +12,7 @@ Rumble relies on dynamic JavaScript rendering and anti-bot firewalls that block 
 * **Custom Web Component Parsing:** Used **BeautifulSoup** to query HTML5 custom web components (`<rum-video-thumbnail>`) and visual thumbnail badges (`rum-video-thumbnail__badge--duration`) directly from [`codes/web_scrap.ipynb`](./codes/web_scrap.ipynb), extracting exact video titles, view counts, upload timestamps, video durations, and direct stream URLs into [`a csv`](./files/tate_speech_livestreams_updated.csv).
 
 ### 2. Cloud ETL & Medallion Architecture (Databricks)
-The raw extracted datasets were ingested into **Databricks** and transformed across three structured data layers:
-**Bronze to Silver to Gold**[`The Codes Notebook`](./codes/TateSpeech_bronze_to_gold.ipynb)
+The raw extracted datasets were ingested into **Databricks** and [`transformed`](./codes/TateSpeech_bronze_to_gold.ipynb) across three structured data layers:
 * **🥉 Bronze Layer (Raw Ingestion):** Loaded [`the scraped CSV records`](./files/tate_speech_livestreams_updated.csv) into raw Delta tables, preserving original schema attributes, timestamps, and metadata strings for full auditability.
 * **🥈 Silver Layer (Cleansing & AI Classification):** Standardized date/time formats, converted string metrics and duration timestamps into clean numerical fields, deduplicated records, and classified livestream topics and content themes.
 * **🥇 Gold Layer (Business-Level Aggregations):** Modeled curated [` analytical table`](./files/gold_tate_speech_livestreams.csv) tracking cumulative views, publishing frequency, duration impact on engagement, and top-performing stream series.
