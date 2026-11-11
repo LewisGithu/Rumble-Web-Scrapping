@@ -19,7 +19,8 @@ The raw extracted datasets were ingested into **Databricks** and [`transformed`]
   [`The Codes Notebook`](./codes/TateSpeech_bronze_to_gold.ipynb)
 
 ### 3. Business Intelligence & Visualization (Databricks Dashboard)
-Using the curated [`Gold table`](./files/gold_tate_speech_livestreams.csv), I built an executive dashboard directly inside **Databricks** to uncover channel growth trends, optimal stream lengths, and audience engagement patterns. 
+Using the curated [`Gold table`](./files/gold_tate_speech_livestreams.csv), I built an executive dashboard directly inside **Databricks** to uncover channel growth trends, optimal stream lengths, and audience engagement patterns.
+[`Dashboard Preview`](./dashboard_preview_.png)
 * 📄 **View the Full Dashboard Report:** [`dashboard.pdf`](./dashboard.pdf)
 
 ---
